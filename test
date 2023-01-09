@@ -1,0 +1,92 @@
+// See https://aka.ms/new-console-template for more information
+using System;
+ 
+{
+    Console.Clear();
+    int intders;
+    int ntc;
+    Console.WriteLine("4 REQEMLI EDED DAXIL ET");
+    intders=Convert.ToInt32(Console.ReadLine());
+    ntc = intders * 20 / 100;
+    ntc= ntc * 10 /100;
+    Console.WriteLine("Netice-");
+    Console.WriteLine(ntc);
+
+
+}
+
+// See https://aka.ms/new-console-template for more information
+using System;
+static void main(String[] args) { }
+Console.WriteLine("Bir reqem daxil edin");
+
+int a = int.Parse(Console.ReadLine());  
+
+if (a % 2 == 0)
+{
+    Console.WriteLine("Bu reqemin son ededi cutdur");
+}
+else
+{
+    Console.WriteLine("Bu reqemin son ededi tekdir");
+}
+
+// See https://aka.ms/new-console-template for more information
+using System;
+static void main(String[] args) { }
+Console.WriteLine("Bir reqem daxil edin");
+
+int a = int.Parse(Console.ReadLine());
+int d = a / 100;
+int b = a / 10 % 10;
+int c = a % 100 % 10;
+
+if (d==b||d==c||c==d||c==b)
+{
+    Console.WriteLine("Daxil etdiyiniz ededin reqemleri eynidir");
+}
+else
+{
+    Console.WriteLine("Daxil etdiyiniz ededin reqemleri ferqlidir");
+}
+
+
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine(test("abcd")); //ilk simvolu son simvol ile evezlemek
+}
+     static string test (string str) {
+    {
+        return str.Length > 1 ?
+        str.Substring(str.Length - 1) +
+        str.Substring(str.Length - 2) +
+        str.Substring(0, 1) : str;
+    }
+}
+
+}
+
+// See https://aka.ms/new-console-template for more information
+using System;
+
+
+Console.WriteLine("Adinizi daxil edin");
+var t1 = Console.ReadLine();
+Console.WriteLine("Cekinii daxil edin");
+var t2 = Console.ReadLine();
+int ceki = 100;
+if (ceki > 65)
+{
+    Console.WriteLine("Siz ideal cekidesiz");
+}
+else
+{
+    Console.WriteLine("Siz obezsiniz");
+}
