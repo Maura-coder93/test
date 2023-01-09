@@ -90,3 +90,20 @@ else
 {
     Console.WriteLine("Siz obezsiniz");
 }
+
+
+  public static void Main(string[] args)
+
+{
+    int sum = 0, i = 1;
+    Console.WriteLine("Eded daxil edin");
+    int Number =Convert.ToInt32(Console.ReadLine());
+    while(i<=Number)
+    {
+        sum = sum + i;
+        i++;
+    }
+    Console.WriteLine("1-1000  ededler arsinda ");
+    Console.ReadLine();
+}
+}
