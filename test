@@ -1,131 +1,49 @@
-// See https://aka.ms/new-console-template for more information
-using System;
- 
+public class Main // sum un while ile tapilmas;
 {
-    Console.Clear();
-    int intders;
-    int ntc;
-    Console.WriteLine("4 REQEMLI EDED DAXIL ET");
-    intders=Convert.ToInt32(Console.ReadLine());
-    ntc = intders * 20 / 100;
-    ntc= ntc * 10 /100;
-    Console.WriteLine("Netice-");
-    Console.WriteLine(ntc);
-
-
+	public static void main(String[] args) {
+	int a=0;
+	int sum=0;
+	while(a<5)
+	{
+	    sum=sum+a;
+	    a++;
+	}
+	System.out.println(sum); 
+	}
 }
 
-// See https://aka.ms/new-console-template for more information
-using System;
-static void main(String[] args) { }
-Console.WriteLine("Bir reqem daxil edin");
 
-int a = int.Parse(Console.ReadLine());  
-
-if (a % 2 == 0)
+public class Main // for ile sum un ile tapilmas;
 {
-    Console.WriteLine("Bu reqemin son ededi cutdur");
+	public static void main(String[] args) {
+	int sum =0;
+	for(int i=0;i<5;i++)
+	{
+	   sum=sum+i;
+	}
+	System.out.println(sum); 
+	}
 }
-else
+
+
+import java.util.Scanner;
+public class Main // sum un ortalamasini tapmaq arrayle
 {
-    Console.WriteLine("Bu reqemin son ededi tekdir");
-}
-
-// See https://aka.ms/new-console-template for more information
-using System;
-static void main(String[] args) { }
-Console.WriteLine("Bir reqem daxil edin");
-
-int a = int.Parse(Console.ReadLine());
-int d = a / 100;
-int b = a / 10 % 10;
-int c = a % 100 % 10;
-
-if (d==b||d==c||c==d||c==b)
-{
-    Console.WriteLine("Daxil etdiyiniz ededin reqemleri eynidir");
-}
-else
-{
-    Console.WriteLine("Daxil etdiyiniz ededin reqemleri ferqlidir");
-}
-
-
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
-
-using System;
-
-public class HelloWorld
-{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine(test("abcd")); //ilk simvolu son simvol ile evezlemek
-}
-     static string test (string str) {
-    {
-        return str.Length > 1 ?
-        str.Substring(str.Length - 1) +
-        str.Substring(str.Length - 2) +
-        str.Substring(0, 1) : str;
-    }
-}
-
-}
-
-// See https://aka.ms/new-console-template for more information
-using System;
-
-
-Console.WriteLine("Adinizi daxil edin");
-var t1 = Console.ReadLine();
-Console.WriteLine("Cekinii daxil edin");
-var t2 = Console.ReadLine();
-int ceki = 100;
-if (ceki > 65)
-{
-    Console.WriteLine("Siz ideal cekidesiz");
-}
-else
-{
-    Console.WriteLine("Siz obezsiniz");
-}
-
-
-  public static void Main(string[] args)
-
-{
-    int sum = 0, i = 1;
-    Console.WriteLine("Eded daxil edin");
-    int Number =Convert.ToInt32(Console.ReadLine());
-    while(i<=Number)
-    {
-        sum = sum + i;
-        i++;
-    }
-    Console.WriteLine("1-1000  ededler arsinda ");
-    Console.ReadLine();
-}
-}
-
-
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
-
-using System;
-namespace CsharpString{
-
-public class HelloWorld
-{
-    public static void Main(string[] args)
-    {
-        string str0="ice";
-        string str1="cream";
-        string result;
-        
-        result = string.Concat(str0, str1);
-        Console.WriteLine(result);
-        Console.ReadLine();
-    }
-}
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Arrayin olcusunu daxil edin");
+	int a = sc.nextInt();
+	int[]arr=new int[a];
+	for(int i=0; i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	int sum=0;
+	for(int j=0;j<arr.length;j++)
+	{
+	   sum=sum+arr[j];
+	}
+	
+	System.out.println(sum); 
+	}
 }
