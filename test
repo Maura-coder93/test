@@ -1,49 +1,54 @@
-public class Main // sum un while ile tapilmas;
-{
-	public static void main(String[] args) {
-	int a=0;
-	int sum=0;
-	while(a<5)
-	{
-	    sum=sum+a;
-	    a++;
-	}
-	System.out.println(sum); 
-	}
+public class Main {   // bir parametrli deyer qaytaran sual
+    public static void main(String[] args) {
+        System.out.println("Topla"+cem());
+    }
+    
+    public static int cem(){
+        
+        int x=23;
+       
+        
+        return x;
+    }
+}
+
+public class Main {    //2 parametrli deyer qaytarmayan metod // hem de deyer qaytarmayan metod sualina da aiddir
+    public static void main(String[] args) { 
+        myMetod(); 
+        myWeb();
+        
+    }
+    
+    public static void myMetod(){
+        System.out.println("Hello");
+       
+    }
+    public static void myWeb(){
+        System.out.println("World");
+}
+}
+
+interface Animal {    // interface e aid sual
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+class Pig implements Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();
+    myPig.animalSound();
+    myPig.sleep();
+  }
 }
 
 
-public class Main // for ile sum un ile tapilmas;
-{
-	public static void main(String[] args) {
-	int sum =0;
-	for(int i=0;i<5;i++)
-	{
-	   sum=sum+i;
-	}
-	System.out.println(sum); 
-	}
-}
 
-
-import java.util.Scanner;
-public class Main // sum un ortalamasini tapmaq arrayle
-{
-	public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Arrayin olcusunu daxil edin");
-	int a = sc.nextInt();
-	int[]arr=new int[a];
-	for(int i=0; i<arr.length;i++)
-	{
-	    arr[i]=sc.nextInt();
-	}
-	int sum=0;
-	for(int j=0;j<arr.length;j++)
-	{
-	   sum=sum+arr[j];
-	}
-	
-	System.out.println(sum); 
-	}
-}
